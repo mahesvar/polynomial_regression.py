@@ -1,3 +1,10 @@
+## this polynomial regression model is used to predict the salary of a newly joined employee who has many years of experience from 
+## his previous company. he says his salary was 160k in his previous company for the similar job in the new company, so he asks for 
+## for similar or higher salary for the same position in the new company
+## the HR is not sure about the salary for his level of experience (say 6.5 level), so he biult a model to predict the salary check 
+## from the data collected in his company 
+## salary data is given in the file position_salaries
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -39,3 +46,10 @@ plt.xlabel('position level')
 plt.ylabel('salary')
 plt.grid()
 plt.show()
+
+# predicting a new result with linear regression
+
+lireg.predict(6.5)
+
+# predicting a new result with polynomial regression
+lireg_2.predict(polyreg.fit_transform(6.5))
